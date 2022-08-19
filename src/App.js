@@ -7,6 +7,10 @@ function App() {
   const [buttonValues, setButtonValues] = useState([]);
 
   const handleCounter = (e) => {
+    setCount(count + (Number(e.target.value) * 3));
+    setButtonValues(buttonValues.concat(e.target.value * 3));
+  }
+  const handleSideCouner = (e) => {
     setCount(count + Number(e.target.value));
     setButtonValues(buttonValues.concat(e.target.value));
   }
@@ -74,19 +78,19 @@ function App() {
           <h3>Yan gir</h3>
         </div>
         <div className="pieces">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>10</button>
-          <button>11</button>
-          <button>12</button>
-          <button>13</button>
+          <button value={1} onClick={handleSideCouner}>1</button>
+          <button value={2} onClick={handleSideCouner}>2</button>
+          <button value={3} onClick={handleSideCouner}>3</button>
+          <button value={4} onClick={handleSideCouner}>4</button>
+          <button value={5} onClick={handleSideCouner}>5</button>
+          <button value={6} onClick={handleSideCouner}>6</button>
+          <button value={7} onClick={handleSideCouner}>7</button>
+          <button value={8} onClick={handleSideCouner}>8</button>
+          <button value={9} onClick={handleCounter}>9</button>
+          <button value={10} onClick={handleSideCouner}>10</button>
+          <button value={11} onClick={handleSideCouner}>11</button>
+          <button value={12} onClick={handleSideCouner}>12</button>
+          <button value={13} onClick={handleSideCouner}>13</button>
         </div>
       </div>
 
