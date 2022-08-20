@@ -30,7 +30,7 @@ function App() {
     } else if (count < 90 && count >= 60) {
       setNotification('Bu elin isi zor haci!')
     } else if (count < 60 && count > 20) {
-      setNotification('Daha yolun basindasin, belki bir umut acarsin!')
+      setNotification('Daha yolun basindasin, sabirli ol!')
     } else {
       setNotification('')
     }
@@ -50,12 +50,12 @@ function App() {
       <div className="counter-box">
         <h1>101 Hesaplayici</h1>
         <p>Elinin Toplami:</p>
-        <p>{count}</p>
-        <p>{notification}</p>
+        <p className={count < 101 ? "red" : "green"}>{count}</p>
+        <p className="notification">{notification}</p>
       </div>
       <div className="pieces-box">
         <div className="pieces-box__heading">
-          <h3>Orta gir</h3>
+          <h2>Orta gir</h2>
           <button disabled={!enabled} onClick={resetCount}>Sifirla</button>
           <button disabled={!enabled} onClick={undoCounter}>Geri Al</button>
         </div>
@@ -75,7 +75,7 @@ function App() {
           <button value={13} onClick={handleCounter}>13</button>
         </div>
         <div className="pieces-box__heading">
-          <h3>Yan gir</h3>
+          <h2>Yan gir</h2>
         </div>
         <div className="pieces">
           <button value={1} onClick={handleSideCouner}>1</button>
@@ -91,6 +91,9 @@ function App() {
           <button value={11} onClick={handleSideCouner}>11</button>
           <button value={12} onClick={handleSideCouner}>12</button>
           <button value={13} onClick={handleSideCouner}>13</button>
+        </div>
+        <div className="footer">
+          <p>Gelistiren: <span className="author">Firat Göktepe</span></p>
         </div>
       </div>
 
