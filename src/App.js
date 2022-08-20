@@ -30,7 +30,7 @@ function App() {
     } else if (count < 90 && count >= 60) {
       setNotification('Sabırlı ol! Umut fakirin ekmeği!')
     } else if (count < 60 && count > 20) {
-      setNotification('Bu elin işi zor valla!')
+      setNotification('Bu elin işi zor!')
     } else {
       setNotification('')
     }
