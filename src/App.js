@@ -30,7 +30,7 @@ function App() {
     } else if (count < 90 && count >= 60) {
       setNotification('Sabırlı ol! Umut fakirin ekmeği!')
     } else if (count < 60 && count > 20) {
-      setNotification('İşin zor valla!')
+      setNotification('Bu elin işi zor valla!')
     } else {
       setNotification('')
     }
@@ -40,11 +40,6 @@ function App() {
     setCount(0)
     setButtonValues([])
   }
-
-  console.log("button values", buttonValues)
-  console.log("last element", Number(buttonValues[buttonValues.length - 1]))
-
-
   return (
     <div className="container">
       <div className="counter-box">
