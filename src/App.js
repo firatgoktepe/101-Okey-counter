@@ -24,13 +24,13 @@ function App() {
 
   useEffect(() => {
     if (count >= 101) {
-      setNotification('Acabiliyorsun hadi yine iyisin :)')
+      setNotification('Açabiliyorsun hadi yine iyisin :)')
     } else if (count < 101 && count >= 90) {
-      setNotification('Umut var ama acamiyorsun hala!')
+      setNotification('Az kaldı ha gayret!')
     } else if (count < 90 && count >= 60) {
-      setNotification('Bu elin isi zor haci!')
+      setNotification('Sabırlı ol! Umut fakirin ekmeği!')
     } else if (count < 60 && count > 20) {
-      setNotification('Daha yolun basindasin, sabirli ol!')
+      setNotification('İşin zor valla!')
     } else {
       setNotification('')
     }
