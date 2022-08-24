@@ -2,6 +2,10 @@
 
 This project is about counting person's pieces in terms of understanding whether he/she is able to reach 101 point to pass next level in 101 okey game
 
+## Check it out
+
+Live link: https://101-okey-hesaplayici.netlify.app/  
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
